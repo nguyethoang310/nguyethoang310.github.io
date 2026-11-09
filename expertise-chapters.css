@@ -1,0 +1,41 @@
+/* Portfolio reference: clear editorial chapters and a contrasting results folio. */
+.about-usp-section .skills-section-heading{margin-bottom:25px}
+.about-usp-section .expertise-chapter{align-items:baseline;gap:13px;margin-bottom:15px}
+.about-usp-section .expertise-chapter h3,.about-usp-section .core-skills>.expertise-chapter h3,.about-usp-section .expertise-chapter #work-values-title,.about-usp-section .thinking-cluster .work-style-heading.expertise-chapter h3{font-size:29px;line-height:1.2;letter-spacing:-.9px;font-weight:600}
+.expertise-number{font-size:11px;line-height:1.5;color:#59719d}
+.about-usp-section .expertise-values{position:relative;display:grid;grid-template-columns:145px minmax(0,1fr);align-items:center;gap:24px;margin-top:32px;padding:23px 25px;background:linear-gradient(105deg,#2549cf,#2854e2);color:#fff;border:0;border-radius:0 9px 3px 3px;isolation:isolate}
+.expertise-values::before{content:'';position:absolute;top:-10px;left:0;width:107px;height:11px;background:#2549cf;clip-path:polygon(0 0,calc(100% - 11px) 0,100% 100%,0 100%)}
+.about-usp-section .expertise-values>.expertise-chapter{display:block;margin:0;padding:0}
+.expertise-values .expertise-number{display:block;color:#edd799;margin-bottom:8px;letter-spacing:1px;font-size:10px}
+.about-usp-section .expertise-values .expertise-chapter h3{color:#fff;font-size:29px;line-height:1.2;letter-spacing:-1px}
+.about-usp-section .expertise-values .expertise-chapter h3>span{display:block;color:#fff}
+.expertise-values .value-strip{gap:18px;padding:0;align-items:start}
+.expertise-values .value-top{min-height:57px;gap:8px}
+.expertise-values .value-top svg{width:23px;height:25px;flex-basis:23px;stroke:#f0dca1}
+.expertise-values .value-top strong{font-size:45px;letter-spacing:-2.3px;color:#fff}
+.expertise-values .value-top small{font-size:19px;vertical-align:7px;color:#e1d6b1}
+.expertise-values .value-top strong>span{font-size:27px}
+.expertise-values .value-range .value-top strong{font-size:33px;letter-spacing:-1.5px}
+.expertise-values .value-range .value-top small{font-size:16px;vertical-align:5px}
+.expertise-values .value-item>p{color:#fff;font-size:12px;line-height:1.6;margin:4px 0 0}
+.expertise-values .value-note{color:#d6e0ff;font-size:10px;line-height:1.7;margin-top:1px}
+.about-usp-section .expertise-secondary{margin-top:29px}
+.expertise-secondary>.expertise-chapter{margin-bottom:16px}
+.about-usp-section .thinking-cluster{margin-top:28px}
+.about-usp-section .thinking-cluster .work-style-heading.expertise-chapter{justify-content:flex-start;margin-bottom:16px;gap:13px;align-items:baseline}
+.expertise-secondary .usp-piece h4{font-size:20px;line-height:1.3;letter-spacing:-.45px}
+.about-usp-section .expertise-secondary .usp-piece p{font-size:11.5px;line-height:1.7}
+.about-usp-section .persona-deck{margin-top:30px}
+@media(max-width:1000px){.about-usp-section .expertise-values{grid-template-columns:125px minmax(0,1fr);gap:19px;padding:22px}.expertise-values .value-strip{gap:13px}.expertise-values .value-top{gap:6px}.expertise-values .value-top strong{font-size:39px}.expertise-values .value-range .value-top strong{font-size:29px}.expertise-values .value-top svg{width:21px;height:23px;flex-basis:21px}.expertise-values .value-top strong>span{font-size:24px}.about-usp-section .expertise-values .expertise-chapter h3{font-size:27px}.expertise-values .value-item>p{font-size:11px}}
+@media(max-width:800px){.about-usp-section .expertise-values{grid-template-columns:1fr;gap:17px}.about-usp-section .expertise-values>.expertise-chapter{display:flex;align-items:baseline;gap:12px}.expertise-values .expertise-number{margin:0}.about-usp-section .expertise-values .expertise-chapter h3{font-size:27px}.about-usp-section .expertise-values .expertise-chapter h3>span{display:inline}.expertise-values .value-top strong{font-size:43px}.expertise-values .value-range .value-top strong{font-size:31px}.expertise-values .value-item>p{font-size:12px}}
+@media(max-width:620px){.about-usp-section .skills-section-heading{margin-bottom:22px}.about-usp-section .expertise-chapter h3,.about-usp-section .core-skills>.expertise-chapter h3,.about-usp-section .expertise-chapter #work-values-title,.about-usp-section .thinking-cluster .work-style-heading.expertise-chapter h3{font-size:25px;letter-spacing:-.7px;line-height:1.2}.about-usp-section .expertise-values{margin-top:29px;padding:20px 18px;gap:17px;border-radius:0 8px 3px 3px}.about-usp-section .expertise-values .expertise-chapter h3{font-size:25px}.expertise-values .value-strip{gap:17px 16px}.expertise-values .value-top{min-height:46px;gap:6px}.expertise-values .value-top svg{width:22px;height:24px;flex-basis:22px}.expertise-values .value-top strong{font-size:39px;letter-spacing:-2px}.expertise-values .value-top small{font-size:17px;vertical-align:6px;margin-right:1px}.expertise-values .value-top strong>span{font-size:24px}.expertise-values .value-range .value-top strong{font-size:28px;letter-spacing:-1.5px}.expertise-values .value-range .value-top small{font-size:14px;vertical-align:4px}.expertise-values .value-item>p{font-size:11px;line-height:1.65}.expertise-values .value-note{font-size:10px}.about-usp-section .expertise-secondary{margin-top:27px}.about-usp-section .thinking-cluster{margin-top:27px}.about-usp-section .thinking-cluster .work-style-heading.expertise-chapter{margin-bottom:15px;gap:11px}.expertise-secondary .usp-piece h4{font-size:20px}.about-usp-section .expertise-secondary .usp-piece p{font-size:12px}}
+/* Larger metric captions and a subtle metallic-gold title. */
+.about-usp-section .expertise-values .value-item>p{font-size:14px;line-height:1.45;margin-top:7px;font-weight:600}
+.about-usp-section .expertise-values .value-note{font-size:12px;line-height:1.55;margin-top:4px;color:#e6ecff}
+.about-usp-section #expertise-values-title,.about-usp-section #expertise-values-title>span{color:#f2d590;background:linear-gradient(110deg,#c69a42 0%,#f9e6ac 25%,#fff4cc 43%,#d6ac56 62%,#f5dfa2 83%,#c69a42 100%);background-size:240% 100%;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:value-gold-shift 7s ease-in-out infinite;transition:filter .3s ease,transform .3s ease}
+.about-usp-section .expertise-values>.expertise-chapter:hover #expertise-values-title{filter:brightness(1.18) drop-shadow(0 2px 9px #f5d77d55);transform:translateY(-2px)}
+.expertise-values .value-top strong{font-variant-numeric:tabular-nums}
+@keyframes value-gold-shift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@media(max-width:1000px) and (min-width:801px){.about-usp-section .expertise-values{grid-template-columns:110px minmax(0,1fr);gap:17px}.expertise-values .value-strip{gap:13px}.about-usp-section .expertise-values .value-item>p{font-size:13px}.about-usp-section .expertise-values .value-note{font-size:11.5px}}
+@media(max-width:620px){.about-usp-section .expertise-values .value-item>p{font-size:13px}.about-usp-section .expertise-values .value-note{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.about-usp-section #expertise-values-title,.about-usp-section #expertise-values-title>span{animation:none;transition:none}.about-usp-section .expertise-values>.expertise-chapter:hover #expertise-values-title{transform:none}}

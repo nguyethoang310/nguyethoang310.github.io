@@ -1,0 +1,79 @@
+/* A goal pair, visual interpretations, and a slide reader with a distinct pager. */
+.tottri-stage.is-brief .tottri-story{max-width:850px;margin:0 auto;text-align:center;padding:4px 0 12px}
+.tottri-stage.is-brief .tottri-story h4{font-size:24px;margin:8px 0 22px;max-width:none}
+.tt-goals{display:grid;grid-template-columns:1fr 44px 1fr;align-items:center;background:#2549d2;border-radius:16px 3px 16px 3px;padding:25px 24px;color:#fff;position:relative}
+.tt-goals h5{font-size:23px;line-height:1.45;letter-spacing:-.5px;font-weight:600;margin:0}
+.tt-amp{display:grid;place-items:center;width:42px;height:42px;border:1px solid #ffffff70;border-radius:50%;color:#f0db9f;font-size:28px;font-weight:500}
+.tt-goals::after{content:'';position:absolute;top:100%;left:50%;width:1px;height:24px;background:#c7a960}
+.tt-means{padding:34px 10px 0}
+.tt-means>span{font-size:13px;font-weight:550;color:#526b97}
+.tt-means p{font-size:22px;line-height:1.65;margin:6px 0 0;color:#244677;letter-spacing:-.4px}
+.tt-means strong{font-weight:650}.tt-means em{font-style:normal;background:linear-gradient(transparent 64%,#ead49c 64%);font-weight:650}
+.tottri-stage:not(.is-brief){grid-template-columns:minmax(245px,.95fr) minmax(0,2.6fr);gap:27px}
+.tottri-stage:not(.is-brief) .tottri-story h4{font-size:23px;margin:7px 0 18px}
+.tt-research{display:grid;gap:9px}
+.tt-research article{padding:12px 14px;border-left:2px solid #b7c7f0;background:#edf1ff;border-radius:0 8px 8px 0}
+.tt-research h5{font-size:11px;color:#56709b;font-weight:550;margin:0 0 4px}
+.tt-research strong{font-size:16px;line-height:1.4;color:#244bd0;letter-spacing:-.2px;display:block;font-weight:600}
+.tt-research p{font-size:11px;color:#456087;line-height:1.7;margin:6px 0 0}
+.tt-research article>span{display:block;font-size:10px;color:#617694;line-height:1.7;margin-top:2px}
+.tt-audience{margin:17px 0 0;padding-left:13px;border-left:2px solid #c6a65a}
+.tt-audience>span{font-size:8px;letter-spacing:1px;color:#65799b;display:block;margin-bottom:5px}
+.tt-audience strong{font-size:16px;line-height:1.5;color:#244677;font-weight:600}
+.tt-audience p{font-size:11px;color:#607394;line-height:1.7;margin:4px 0 0}
+.tottri-stage .tottri-slide-toolbar{width:100%;margin:0 0 11px}
+.tt-slide-pager{display:flex;gap:9px;align-items:center;width:100%;min-height:40px}
+.tt-slide-title{font-size:12px;line-height:1.5;font-weight:550;color:#36527c;flex:1;min-width:0;padding-right:8px}
+.tt-slide-count{font-size:10px;color:#62769c;font-variant-numeric:tabular-nums;white-space:nowrap;min-width:42px;text-align:center}
+.tt-page-control{display:grid;place-items:center;width:34px;height:34px;padding:0;border:1px solid #c6d3ec;border-radius:50%;background:#fff;color:#2854df;cursor:pointer;flex-shrink:0;transition:background .2s}
+.tt-page-control svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6}
+.tt-page-control:hover:not(:disabled){background:#e5ecff}.tt-page-control:disabled{opacity:.3;cursor:default}.tt-page-control:focus-visible{outline:2px solid #2854df;outline-offset:3px}
+.tt-direction{position:relative;overflow:hidden;padding:20px 19px 24px;background:#e4ebff;border-radius:3px 30px 3px 3px;color:#2a477a}
+.tt-direction>p{font-size:13px;line-height:1.65;position:relative;z-index:1;margin:0}
+.tt-direction>p>strong{display:block;font-size:25px;line-height:1.35;letter-spacing:-.6px;color:#244bcd;margin-top:3px;font-weight:600}
+.tt-digital{position:relative;z-index:1;margin:25px 0;padding-left:12px;border-left:2px solid #c5a253}
+.tt-digital>span{font-size:31px;letter-spacing:-1px;font-weight:600;color:#244bcd;display:block;line-height:1.25}
+.tt-digital>small{font-size:11px;line-height:1.6;color:#536b95}
+.tt-direction>.tt-journey-reach>strong{font-size:19px;max-width:205px}
+.tt-orbit{position:absolute;width:170px;height:170px;border:1px solid #b4c4ed;border-radius:50%;right:-97px;top:100px;transform:rotate(-30deg)}
+.tt-orbit::after{content:'';position:absolute;inset:19px;border:1px solid #bfcae8;border-radius:50%}
+.tt-orbit i{position:absolute;width:7px;height:7px;background:#94abeb;border-radius:50%;left:0;top:47%}.tt-orbit i:nth-child(2){left:17px;top:15%}.tt-orbit i:nth-child(3){left:26px;top:85%;background:#c6a65b}
+.tt-roadmap{padding:0 0 12px;color:#284779}
+.tt-always{padding:20px 18px 24px;background:#2549d2;color:#fff;border-radius:3px 26px 3px 3px;position:relative;overflow:hidden}
+.tt-always>span{font-size:9px;letter-spacing:.7px;color:#c7d6ff}
+.tt-always>strong{font-size:28px;line-height:1.25;letter-spacing:-.6px;display:block;margin-top:9px;font-weight:600}
+.tt-always i{position:absolute;width:100px;height:100px;border:1px solid #8aabf966;border-radius:50%;right:-20px;bottom:-45px}
+.tt-roadmap>p{font-size:12px;line-height:1.6;margin:18px 0 10px;color:#536b94}
+.tt-seasons{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tt-seasons>span{padding:13px 12px;border-top:2px solid #c9ad6b;background:#f0e5c9;border-radius:0 0 8px 0}
+.tt-seasons small{font-size:8px;letter-spacing:.6px;color:#766749;display:block}
+.tt-seasons strong{font-size:19px;letter-spacing:-.4px;line-height:1.5;display:block;color:#2c4779;font-weight:600}
+@media(max-width:900px){.tottri-stage:not(.is-brief){grid-template-columns:minmax(220px,.9fr) minmax(0,2fr);gap:20px}.tt-goals h5{font-size:21px}.tt-direction>p>strong{font-size:23px}.tt-slide-title{font-size:11px}}
+@media(max-width:700px){.tottri-stage:not(.is-brief){display:flex;gap:20px}.tottri-stage.is-brief .tottri-story{text-align:left;width:100%}.tottri-stage.is-brief .tottri-story h4{font-size:23px}.tt-goals{grid-template-columns:1fr;text-align:center;gap:14px;padding:22px 18px;border-radius:14px 3px 14px 3px}.tt-goals h5{font-size:22px}.tt-amp{justify-self:center;width:30px;height:30px;font-size:22px}.tt-means{text-align:center;padding:31px 0 0}.tt-means p{font-size:20px;line-height:1.6}.tt-means p br{display:none}.tt-means em{white-space:normal}.tt-research{gap:8px}.tt-research article{padding:11px 14px}.tt-research strong{font-size:17px}.tt-research p{font-size:12px}.tt-research article>span{font-size:11px}.tt-audience p{font-size:12px}.tt-direction{padding:18px 20px}.tt-direction>p>strong{font-size:25px}.tt-direction>.tt-journey-reach>strong{font-size:20px;max-width:none}.tt-digital{margin:20px 0}.tt-digital>span{font-size:29px}.tt-roadmap{display:grid;grid-template-columns:1fr 1fr;gap:0 13px;padding:0}.tt-always{grid-row:1/3;padding:17px 14px}.tt-always>strong{font-size:23px}.tt-always>span{font-size:8px}.tt-roadmap>p{margin:0 0 8px;font-size:11px}.tt-seasons{grid-template-columns:1fr;gap:8px}.tt-seasons>span{padding:8px 12px}.tt-seasons strong{font-size:19px}.tt-slide-pager{gap:7px}.tt-slide-title{font-size:11px}.tt-page-control{width:32px;height:32px}}
+@media(max-width:700px){.tt-means p br{display:initial}}
+@media(max-width:700px){.tt-means strong{white-space:nowrap}}
+
+/* Consistent direction points, a shared seasonal focus and a visible page action. */
+.tt-digital{border:0;padding-left:0}
+.tt-always>strong{font-size:25px;line-height:1.35}
+.tt-seasons{display:block;margin-top:16px}
+.tt-seasons>span{display:block;padding:15px 14px;background:#f0e5c9;border:0;border-radius:3px 3px 12px 3px}
+.tt-seasons small{font-size:8px;letter-spacing:.35px;line-height:1.6}
+.tt-seasons strong{font-size:20px;line-height:1.6;margin-top:5px}
+.tt-seasons strong b{font-weight:400;font-size:16px;color:#8e7948;margin:0 4px}
+.tt-page-control{width:40px;height:40px;border-color:#9bb2ed;border-width:1.5px;color:#244bce}
+.tt-slide-count{font-size:12px;color:#294d95;font-weight:600;min-width:50px}
+.tt-next{display:flex;justify-content:center;gap:5px;width:86px;background:#2854ff;border-color:#2854ff;color:#fff;box-shadow:0 4px 11px #2854ff25;border-radius:22px;font:inherit;font-size:12px;font-weight:600}
+.tt-next:hover:not(:disabled){background:#1f42cf;color:#fff;border-color:#1f42cf}
+.tt-next svg{transition:transform .2s}.tt-next:hover:not(:disabled) svg{transform:translateX(2px)}
+.tt-page-control:disabled{opacity:1;color:#9aa8bf;border-color:#dbe2ef;background:#edf1f8;box-shadow:none}
+@media(max-width:700px){.tt-roadmap{display:block}.tt-always{padding:19px 18px}.tt-always>strong{font-size:24px}.tt-always>strong br{display:none}.tt-seasons{margin-top:11px}.tt-seasons strong{font-size:22px}.tt-slide-pager{flex-wrap:wrap;gap:8px}.tt-slide-title{flex:1 1 100%;font-size:12px;padding:0 0 2px}.tt-prev{margin-left:auto}.tt-page-control{width:40px;height:40px}.tt-next{width:86px}}
+
+.tt-next{position:relative;isolation:isolate}
+.tt-next::after{content:'';position:absolute;inset:-3px;border:1.5px solid #2854ff;border-radius:24px;opacity:0;pointer-events:none;transform:scale(1)}
+.tt-in-view .tt-next:not(:disabled)::after{animation:tt-next-beacon 2.8s ease-out infinite}
+.tt-in-view .tt-next:not(:disabled) svg{animation:tt-next-hint 2.8s ease-in-out infinite}
+.tt-next:hover::after,.tt-next:focus-visible::after{animation:none;opacity:0}
+@keyframes tt-next-beacon{0%,8%{opacity:.6;transform:scale(1)}45%,100%{opacity:0;transform:scale(1.22,1.45)}}
+@keyframes tt-next-hint{0%,12%,46%,100%{transform:translateX(0)}25%,35%{transform:translateX(3px)}}
+@media(prefers-reduced-motion:reduce){.tt-in-view .tt-next:not(:disabled)::after,.tt-in-view .tt-next:not(:disabled) svg{animation:none}}

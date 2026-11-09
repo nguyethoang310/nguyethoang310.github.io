@@ -1,0 +1,24 @@
+/* Content-led figures: no cards, connector marks, dots or decorative rules. */
+.about-usp-section{padding:32px 0 28px}
+.about-usp-section .skills-section-heading{margin-bottom:21px}
+.about-usp-section .expertise-chapter{margin-bottom:13px}
+.about-usp-section .expertise-values{margin-top:21px;padding-top:0;border:0}
+.expertise-values>.expertise-chapter{margin-bottom:14px}
+.value-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;padding:1px 0 0}
+.value-item{min-width:0;margin:0;padding:0;color:#284779}
+.value-top{display:flex;align-items:center;gap:11px;min-height:65px}
+.value-top svg{flex:0 0 27px;width:27px;height:29px;fill:none;stroke:#40629a;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.value-top strong{display:block;white-space:nowrap;font-size:55px;line-height:1.1;font-weight:600;letter-spacing:-2.8px;color:#2854ef;font-variant-numeric:tabular-nums}
+.value-top small{font-size:23px;line-height:1;font-weight:400;letter-spacing:-1px;vertical-align:8px;margin-right:3px}
+.value-top strong>span{font-size:31px;letter-spacing:-1px}
+.value-range .value-top strong{font-size:40px;letter-spacing:-2px}
+.value-range .value-top small{font-size:20px;vertical-align:6px}
+.value-item>p{font-size:13px;line-height:1.6;font-weight:550;color:#294879;margin:6px 0 0;text-wrap:pretty}
+.value-note{display:block;font-size:11px;line-height:1.7;color:#637a9b;margin-top:1px}
+.about-usp-section .expertise-secondary{margin-top:23px;padding-top:0;border:0}
+.expertise-secondary>.expertise-chapter{margin-bottom:15px}
+.about-usp-section .thinking-cluster{margin-top:23px;padding-top:0;border:0}
+.about-usp-section .thinking-cluster .work-style-heading.expertise-chapter{margin-bottom:14px}
+.about-usp-section .persona-deck{margin-top:24px}
+@media(max-width:900px){.value-strip{gap:16px}.value-top{gap:8px}.value-top svg{width:24px;height:27px;flex-basis:24px}.value-top strong{font-size:46px}.value-range .value-top strong{font-size:33px}.value-top small{font-size:20px}.value-top strong>span{font-size:27px}.value-item>p{font-size:12px}}
+@media(max-width:620px){.about-usp-section{padding:28px 0 25px}.about-usp-section .skills-section-heading{margin-bottom:19px}.about-usp-section .expertise-values{margin-top:20px}.value-strip{grid-template-columns:1fr 1fr;gap:18px 17px}.value-top{gap:8px;min-height:51px}.value-top svg{width:24px;height:26px;flex-basis:24px}.value-top strong{font-size:43px;letter-spacing:-2.2px}.value-top small{font-size:18px;vertical-align:7px;margin-right:1px}.value-top strong>span{font-size:25px}.value-range .value-top strong{font-size:31px;letter-spacing:-1.8px}.value-range .value-top small{font-size:16px;vertical-align:5px}.value-item>p{font-size:12px;line-height:1.6;margin-top:4px}.value-note{font-size:11px}.about-usp-section .expertise-secondary{margin-top:22px}.about-usp-section .thinking-cluster{margin-top:22px}.about-usp-section .persona-deck{margin-top:23px}}

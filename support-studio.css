@@ -1,0 +1,35 @@
+/* A compact toolkit and conversation cards instead of two flat information blocks. */
+.support-pair{background:linear-gradient(120deg,#fafbff 5%,#eff3ff 100%);padding:38px 0}
+.support-pair-grid{gap:40px}
+.support-pair .more-skills,.support-pair .languages{padding:0;background:none;border:0;border-radius:0;color:#162641;overflow:visible;justify-content:flex-start}
+.support-pair .more-heading{position:relative;margin-bottom:20px}
+.support-pair .section-label{color:#536d99}
+.support-pair .more-heading h2{color:#162641}
+.support-pair .support-skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.support-pair .support-skill,.support-pair .support-skill+.support-skill{padding:17px 18px;min-height:98px;gap:13px;box-sizing:border-box;border:1px solid #cbd8f1;transition:transform .25s,box-shadow .25s}
+.support-pair .support-skill:first-child{grid-column:1/-1;min-height:76px;background:#2851dc;border-color:#2851dc;border-radius:14px 22px 4px 4px}
+.support-pair .support-skill:nth-child(2){background:#e1eaff;border-radius:4px 4px 4px 18px}
+.support-pair .support-skill:nth-child(3){background:linear-gradient(120deg,#ead5a0,#f8edca 48%,#d6b970);border-color:#e3ce98;border-radius:4px 4px 18px 4px}
+.support-pair .support-skill h3{font-size:17px;line-height:1.45;letter-spacing:-.35px;color:#23457a;font-weight:550}
+.support-pair .support-skill:first-child h3{color:#fff}
+.support-pair .support-skill svg{width:34px;height:34px;flex-basis:34px;stroke:#3c62ad}
+.support-pair .support-skill .support-accent{stroke:#3c62ad}
+.support-pair .support-skill:first-child svg{stroke:#edf2ff}
+.support-pair .support-skill:first-child .support-accent{stroke:#f0d88e}
+.support-pair .support-skill:hover{transform:translateY(-3px);box-shadow:0 7px 17px #2a4e9d12}
+.support-pair .language-grid{gap:9px;position:relative}
+.support-pair .language-item{width:94%;min-height:58px;padding:13px 19px;box-sizing:border-box;justify-content:flex-start;gap:20px;background:#fff;border:1px solid #d5dff2;border-radius:14px 14px 14px 4px;box-shadow:0 3px 9px #2a4e9d05}
+.support-pair .language-item:nth-child(2){justify-self:end;background:#e6edff;border-radius:14px 4px 14px 14px;border-color:#cdd9f3}
+.support-pair .language-item:nth-child(3){border-radius:14px 14px 14px 4px}
+.support-pair .language-item h3{flex:0 0 105px;font-size:18px;line-height:1.5}
+.support-pair .language-item p{font-size:13px;text-align:left;line-height:1.6}
+.language-conversation{position:absolute;right:6px;bottom:4px;width:65px;height:56px;fill:none;stroke:#7e98c7;stroke-width:1.15;stroke-linejoin:round;pointer-events:none}
+.language-conversation .conversation-front{fill:#eef3ff;stroke:#6889c1}
+.language-conversation .conversation-accent{stroke:#b2944f}
+@media(max-width:1000px){.support-pair-grid{gap:25px}.support-pair .support-skill,.support-pair .support-skill+.support-skill{padding:15px 13px;gap:10px}.support-pair .support-skill h3{font-size:15px}.support-pair .support-skill svg{width:29px;height:29px;flex-basis:29px}.support-pair .language-item{padding:12px 15px;gap:10px}.support-pair .language-item h3{font-size:17px;flex-basis:86px}.support-pair .language-item p{font-size:12px}.language-conversation{width:49px;height:43px}}
+@media(max-width:740px){.support-pair{padding:28px 0}.support-pair-grid{gap:28px}.support-pair .more-heading{margin-bottom:18px}.support-pair .support-skill,.support-pair .support-skill+.support-skill{min-height:102px;padding:14px 13px;gap:9px}.support-pair .support-skill:first-child{min-height:70px}.support-pair .support-skill h3{font-size:15px}.support-pair .support-skill svg{width:29px;height:29px;flex-basis:29px}.support-pair .language-item{min-height:56px;width:96%;padding:12px 14px;gap:12px}.support-pair .language-item h3{font-size:17px;flex-basis:87px}.support-pair .language-item p{font-size:12px}.language-conversation{right:2px;width:56px;height:47px}}
+@media(prefers-reduced-motion:reduce){.support-pair .support-skill{transition:none}.support-pair .support-skill:hover{transform:none}}
+.support-phrase{white-space:nowrap}
+@media(max-width:740px){.support-pair .support-skill:nth-child(n+2){flex-direction:column;align-items:flex-start;justify-content:center;min-height:132px;gap:8px}}
+.support-pair .language-item h3{white-space:nowrap}
+@media(max-width:740px){.support-pair .language-item h3{flex-basis:98px}}

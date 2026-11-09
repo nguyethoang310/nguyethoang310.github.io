@@ -1,0 +1,57 @@
+/* Two chapters: measurable contributions, then working approach. */
+.about-usp-section{padding:42px 0 34px}
+.about-usp-section .skills-section-heading{margin-bottom:26px}
+.about-usp-section .expertise-primary{padding:0;margin:0;border:0;border-radius:0;background:none;box-shadow:none;overflow:visible}
+.about-usp-section .expertise-primary::before{content:none}
+.expertise-chapter{display:flex;gap:15px;align-items:baseline;margin:0 0 17px}
+.expertise-number{font-size:12px;font-weight:600;letter-spacing:.4px;color:#2854df;flex-shrink:0;font-variant-numeric:tabular-nums}
+.about-usp-section .expertise-chapter h3,.about-usp-section .core-skills>.expertise-chapter h3,.about-usp-section .expertise-chapter #work-values-title{font-size:27px;line-height:1.3;letter-spacing:-.8px;color:#203d6d;font-weight:600;margin:0}
+.expertise-chapter h3>span{color:#2854ff}
+.impact-map{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.impact-unit{position:relative;display:grid;grid-template-columns:minmax(145px,.92fr) minmax(0,1.08fr);min-width:0;border-radius:5px 24px 5px 5px;overflow:hidden;isolation:isolate;background:#2854ed;color:#fff}
+.impact-value{position:relative;padding:22px 0 20px 23px;min-width:0;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+.impact-value>strong{position:relative;z-index:1;font-size:63px;line-height:1.05;letter-spacing:-3px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.impact-approx{font-size:27px;letter-spacing:-1px;margin-right:3px;vertical-align:9px;font-weight:400}
+.impact-suffix{font-size:38px;letter-spacing:-2px}
+.impact-value>p{position:relative;z-index:1;font-size:13px;line-height:1.6;font-weight:550;margin:10px 0 0}
+.impact-value>p>span{display:block;font-size:11px;line-height:1.6;font-weight:400;opacity:.8}
+.impact-graphic{position:absolute;width:132px;height:84px;top:10px;left:12px;opacity:.16;overflow:visible;pointer-events:none}
+.impact-accent{stroke:#efd79a}.impact-accent-dot{fill:#e5c87e}
+.impact-skill{align-self:stretch;position:relative;padding:24px 19px 22px 20px;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.impact-skill::before{content:'';position:absolute;left:0;top:25px;bottom:25px;width:1px;background:#ffffff38}
+.impact-kicker{font-size:8px;line-height:1.6;letter-spacing:1.15px;opacity:.72;margin-bottom:9px}
+.impact-skill h4{font-size:17px;line-height:1.45;letter-spacing:-.3px;font-weight:550;margin:0}
+.impact-skill p{font-size:11px;line-height:1.75;opacity:.78;margin:9px 0 0}
+.impact-skill h4{text-wrap:balance}
+.impact-nowrap,.impact-value>p>.impact-nowrap{white-space:nowrap;display:inline;font:inherit;opacity:1}
+.impact-growth{color:#28416e;background:linear-gradient(115deg,#ddc58b,#f5e9c6 56%,#dec793)}
+.impact-growth .impact-skill::before{background:#a0864f4d}
+.impact-growth .impact-graphic{opacity:.14;left:15px;top:7px}
+.impact-growth .impact-accent{stroke:#496aab}
+.impact-proposals{background:#fcfdff;color:#244578;border:1px solid #c8d5ee;box-sizing:border-box}
+.impact-proposals .impact-value>strong{color:#2854ee}
+.impact-proposals .impact-skill::before{background:#c8d5ee}
+.impact-proposals .impact-graphic{opacity:.15}
+.impact-projects{background:#d4dff9;color:#24447a;border:1px solid #b9cbf0;box-sizing:border-box}
+.impact-projects .impact-value{padding-left:18px}
+.impact-projects .impact-value>strong{font-size:43px;letter-spacing:-2px}
+.impact-projects .impact-approx{font-size:22px;vertical-align:6px}
+.impact-projects .impact-skill::before{background:#a2b8e166}
+.expertise-secondary{margin-top:35px}
+.expertise-secondary>.expertise-chapter{justify-content:flex-end;margin-bottom:20px}
+.expertise-group-label{font-size:12px;letter-spacing:.4px;line-height:1.5;font-weight:550;margin:0 0 12px;color:#59719b}
+.expertise-secondary .usp-board{gap:10px}
+.expertise-secondary .usp-piece{padding:17px 20px;min-height:0}
+.expertise-secondary .usp-piece h4{position:relative;z-index:1;font-size:20px;line-height:1.35;letter-spacing:-.5px;font-weight:600;max-width:89%;margin:0 0 10px}
+.expertise-secondary .usp-piece h4 span{color:#2854ff}
+.expertise-secondary .usp-pixel h4 .usp-pixel-word{color:#f2df9e}
+.expertise-secondary .usp-words h4 span{background:linear-gradient(transparent 78%,#dce5fc 78%)}
+.expertise-secondary .usp-root h4 span{border-bottom:2px solid #bda366;color:#2854d5}
+.about-usp-section .expertise-secondary .thinking-cluster{margin-top:22px}
+.about-usp-section .expertise-secondary .thinking-cluster .work-style-heading{margin:0 0 12px;padding:0}
+.about-usp-section .expertise-secondary .thinking-canvas{margin:0}
+.expertise-secondary .work-style-heading .expertise-group-label{margin:0;color:#59719b;font-size:12px;letter-spacing:.4px;line-height:1.5;font-weight:550}
+.about-usp-section .persona-deck{margin-top:32px}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.impact-graphic{transition:transform .5s cubic-bezier(.16,1,.3,1),opacity .5s}.impact-unit:hover .impact-graphic{transform:translateY(-3px) rotate(-3deg);opacity:.25}}
+@media(max-width:900px){.impact-unit{grid-template-columns:.95fr 1.05fr}.impact-value{padding-left:18px}.impact-value>strong{font-size:54px}.impact-skill{padding:21px 15px}.impact-skill h4{font-size:16px}.impact-projects .impact-value>strong{font-size:37px}.impact-value>p{font-size:12px}.impact-approx{font-size:22px;vertical-align:8px}.impact-suffix{font-size:31px}.impact-skill p{font-size:10px}.about-usp-section .expertise-chapter h3,.about-usp-section .expertise-chapter #work-values-title{font-size:25px}}
+@media(max-width:700px){.impact-map{grid-template-columns:1fr;gap:10px}.impact-unit{grid-template-columns:.95fr 1.05fr}.impact-value{padding:20px 0 20px 21px}.impact-value>strong{font-size:56px}.impact-skill{padding:20px 18px}.impact-skill h4{font-size:17px}.impact-skill p{font-size:11px}.impact-value>p{font-size:13px}.impact-projects .impact-value{padding-left:19px}.impact-projects .impact-value>strong{font-size:42px}.impact-graphic{width:121px;left:14px}.impact-approx{font-size:25px;vertical-align:8px}.impact-suffix{font-size:34px}.expertise-chapter{gap:11px;align-items:flex-start}.expertise-number{padding-top:5px;font-size:11px}.about-usp-section .expertise-chapter h3,.about-usp-section .expertise-chapter #work-values-title{font-size:24px;line-height:1.3;letter-spacing:-.7px}.expertise-chapter h3>span{display:block}.expertise-secondary{margin-top:28px}.expertise-secondary>.expertise-chapter{justify-content:flex-start}.expertise-secondary .usp-piece h4{font-size:21px}.impact-skill h4 br{display:none}.expertise-secondary .usp-piece{padding:18px 19px}.expertise-secondary .usp-piece h4{max-width:92%}}

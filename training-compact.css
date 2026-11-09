@@ -1,0 +1,59 @@
+/* Two compact companion sections; one course at a time with all photos visible. */
+.support-pair{background:#fafbff;padding:38px 0}
+.support-pair-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.more-skills,.languages{padding:26px 29px;min-width:0;display:flex;flex-direction:column;justify-content:center}
+.more-skills{background:#2447ca;color:#fff;border-radius:4px 24px 4px 4px;overflow:visible}
+.languages{background:#eaf0fc;color:#162641;border-radius:24px 4px 4px 4px}
+.more-heading{margin:0 0 21px}
+.more-heading .section-label{margin:0 0 11px;font-size:10px}
+.more-skills .section-label{color:#d8e2ff}
+.support-skill-grid{display:grid;grid-template-columns:1fr;gap:14px}
+.support-skill,.support-skill+.support-skill{display:flex;align-items:center;gap:16px;min-height:42px;min-width:0;padding:0;border:0}
+.support-skill h3{font-size:18px;line-height:1.45;font-weight:550;letter-spacing:-.4px;color:#fff;margin:0}
+.support-skill svg{width:38px;height:38px;flex:0 0 38px}
+.language-grid{display:grid;grid-template-columns:1fr;gap:14px}
+.language-item{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:42px}
+.language-item h3{font-size:19px;line-height:1.45;letter-spacing:-.4px;margin:0;font-weight:600;color:#23457c}
+.language-item p{font-size:14px;line-height:1.6;color:#536b92;margin:0;text-align:right}
+.professional-activities{padding:43px 0;background:#eaf0fc;color:#162641}
+.activities-heading{margin-bottom:25px}
+.training-tabs{display:flex;gap:32px;border-bottom:1px solid #bccce9;padding:0 24px;background:#f7f9ff;border-radius:10px 10px 0 0}
+.training-tabs button{position:relative;display:flex;align-items:center;justify-content:center;min-height:59px;padding:14px 0;font:inherit;font-size:15px;line-height:1.5;font-weight:500;color:#5d7397;background:none;border:0;cursor:pointer;text-align:left;transition:color .2s}
+.training-tabs button:after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:3px;transform:scaleX(0);background:#2854e5;transform-origin:left;transition:transform .25s}
+.training-tabs button[aria-selected=true]{color:#234ed5;font-weight:650}
+.training-tabs button[aria-selected=true]:after{transform:scaleX(1)}
+.training-tabs button:hover{color:#234ed5}
+.teaching-course:nth-child(n){display:block;background:#fff;padding:27px;border:1px solid #d0dcf2;border-top:0;border-radius:0 0 10px 10px;min-width:0;overflow:hidden}
+.teaching-course[hidden]{display:none!important}
+.course-summary{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:38px;align-items:center;margin-bottom:25px}
+.teaching-course h3{font-size:27px;line-height:1.4;letter-spacing:-.8px;font-weight:600;margin:0;color:#18386c;max-width:none;text-wrap:pretty}
+.course-details{display:flex;flex-direction:column;justify-content:center;gap:10px}
+.course-details p{font-size:14px;line-height:1.75;color:#465f86;margin:0;text-wrap:pretty}
+.course-details p>strong{font-weight:600;color:#223f70}
+.course-details b{font-weight:600;color:#2851ca}
+.course-images{min-width:0}
+.course-images-content{display:grid;grid-template-columns:1.12fr 1fr;gap:24px;align-items:center}
+.course-images figure{margin:0;min-width:0}
+.course-images figcaption{font-size:12px;line-height:1.5;font-weight:550;color:#526b95;margin:0 0 10px}
+.course-image{position:relative;display:block;width:100%;height:auto;margin:0;padding:0;border:0;border-radius:4px;background:transparent;cursor:zoom-in;overflow:hidden}
+.course-image img{display:block;width:100%;height:auto;object-fit:contain}
+.course-images-fullstack .course-image{max-width:700px;margin:auto}
+.course-images-fullstack img{max-height:420px;width:100%;object-fit:contain}
+.training-tabs button:focus-visible,.course-image:focus-visible{outline:2px solid #2854ff;outline-offset:3px}
+@media(max-width:1000px){.more-skills,.languages{padding:24px}.support-skill,.support-skill+.support-skill{gap:12px}.support-skill h3{font-size:16px}.language-item{gap:10px}.language-item h3{font-size:18px}.language-item p{font-size:12px}.course-summary{gap:27px;grid-template-columns:.8fr 1.2fr}.teaching-course h3{font-size:24px}}
+@media(max-width:740px){.support-pair{padding:25px 0}.support-pair-grid{grid-template-columns:1fr;gap:15px}.more-skills,.languages{padding:23px}.more-heading{margin-bottom:20px}.support-skill h3{font-size:17px}.support-skill-grid,.language-grid{gap:11px}.language-item h3{font-size:19px}.language-item p{font-size:13px}.professional-activities{padding:32px 0}.training-tabs{gap:22px;padding:0 18px}.training-tabs button{font-size:13px;min-height:58px;flex:1}.teaching-course:nth-child(n){padding:21px 18px}.course-summary{grid-template-columns:1fr;gap:18px;margin-bottom:22px}.teaching-course h3{font-size:24px}.course-details{gap:9px}.course-details p{font-size:14px;line-height:1.7}.course-images-content{grid-template-columns:1fr;gap:20px}.course-images figcaption{font-size:12px;margin-bottom:8px}.course-image{height:auto}.course-images-fullstack img{max-height:none}}
+@media(prefers-reduced-motion:reduce){.training-tabs button,.training-tabs button:after{transition:none}}
+/* Course tabs as a pair of illustrated, tactile selectors. */
+.training-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:0 0 14px;border:0;background:none;border-radius:0;max-width:810px}
+.training-tabs button{min-height:78px;justify-content:flex-start;gap:16px;padding:18px 22px;border:1px solid #c5d2ed;border-radius:13px 13px 4px 4px;background:#f6f8ff;color:#496394;font-size:18px;font-weight:550;line-height:1.4;box-shadow:0 2px 5px #28477806;transition:background .25s,color .25s,box-shadow .25s,transform .25s}
+.training-tabs button:after{content:none}
+.training-tabs button[aria-selected=true]{background:linear-gradient(115deg,#2346c7,#2e58e6);border-color:#2850d4;color:#fff;font-weight:600;box-shadow:inset 0 -3px #e7ce8b,0 6px 15px #2448cc1b}
+.training-tabs button:hover{transform:translateY(-2px);background:#e9efff;color:#234ed5;box-shadow:0 5px 13px #28477812}
+.training-tabs button[aria-selected=true]:hover{background:linear-gradient(115deg,#294dd5,#345fe9);color:#fff;box-shadow:inset 0 -3px #efdba7,0 8px 18px #2448cc25}
+.training-tab-icon{display:block;width:34px;height:34px;flex:0 0 34px;fill:none;stroke:currentColor;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round}
+.training-tabs button[aria-selected=true] .training-tab-icon{color:#f1dfaa}
+.training-tabs button[aria-selected=true] .training-icon-accent{animation:training-icon-draw .65s ease-out both}
+.teaching-course:nth-child(n){border-top:1px solid #d0dcf2;border-radius:4px 20px 8px 8px}
+@keyframes training-icon-draw{from{stroke-dasharray:80;stroke-dashoffset:80}to{stroke-dasharray:80;stroke-dashoffset:0}}
+@media(max-width:740px){.training-tabs{gap:9px;padding-bottom:12px}.training-tabs button{flex-direction:column;justify-content:center;gap:9px;min-height:98px;padding:13px 10px;font-size:13px;text-align:center;line-height:1.4;border-radius:12px 12px 4px 4px}.training-tabs button>span{text-wrap:balance}.training-tab-icon{width:27px;height:27px;flex-basis:27px}}
+@media(prefers-reduced-motion:reduce){.training-tabs button{transition:none}.training-tabs button:hover{transform:none}.training-tabs button[aria-selected=true] .training-icon-accent{animation:none}}

@@ -1,0 +1,20 @@
+.personal-constellation{position:relative;max-width:1000px;margin:30px auto 0;padding:19px 0 0;border-top:1px solid #bdcde6;color:#335481}
+.personal-constellation>h3{font-size:15px;font-weight:500;line-height:1.5;letter-spacing:-.2px;margin:0 0 15px;color:#5e7599}
+.constellation-sky{position:relative;min-height:112px}
+.constellation-orbit{position:absolute;inset:0 0 auto;width:100%;height:110px;overflow:visible;pointer-events:none}
+.constellation-orbit path{fill:none;stroke:#9db5de;stroke-width:1;vector-effect:non-scaling-stroke}.constellation-orbit circle{fill:#c2a661}
+.constellation-points{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));position:relative}
+.constellation-point{appearance:none;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;border:0;background:none;padding:0 9px;margin:35px 0 0;font:inherit;cursor:pointer;color:#47648f;position:relative;min-width:0;text-align:center;outline-offset:6px;border-radius:4px}
+.constellation-point:nth-child(2){margin-top:10px}.constellation-point:nth-child(3){margin-top:45px}.constellation-point:nth-child(4){margin-top:20px}
+.constellation-dot{position:relative;display:block;width:12px;height:12px;border-radius:50%;background:linear-gradient(130deg,#fff,#a7b9d6 50%,#f2e4ba);border:1px solid #8fa9d4;margin-bottom:12px;box-sizing:border-box;transition:background .25s,scale .25s}
+.constellation-dot:after{content:'';position:absolute;inset:-6px;border:1px solid #9ab1df77;border-radius:50%;opacity:0;scale:.7;transition:opacity .25s,scale .25s}
+.constellation-point strong{font-size:16px;letter-spacing:-.4px;font-weight:550;line-height:1.4;position:relative;background:#e9eefb;padding:0 5px;z-index:1}
+.constellation-label{font-size:8px;letter-spacing:.3px;line-height:1.5;margin-top:4px;color:#7b91b0;background:#e9eefb;padding:0 4px;position:relative;z-index:1}
+.constellation-point[aria-selected="true"]{color:#2854ff}.constellation-point[aria-selected="true"] .constellation-dot{background:#2854ff;border-color:#2854ff}.constellation-point[aria-selected="true"] .constellation-dot:after{opacity:1;scale:1;border-color:#b9a065}
+.constellation-point:hover .constellation-dot{scale:1.15}.constellation-point:focus-visible{outline:2px solid #2854ff}
+.constellation-reading{max-width:690px;min-height:39px;margin:14px auto 0;text-align:center;font-size:12px;line-height:1.7;color:#536d97;padding:7px 20px;box-sizing:border-box;position:relative}
+.constellation-reading:before{content:'';position:absolute;left:50%;top:0;translate:-50% 0;width:28px;height:1px;background:linear-gradient(90deg,#9aafd4,#c1a461)}
+.constellation-reading p{margin:0;text-wrap:pretty}
+.constellation-reading:focus-visible{outline:1px solid #92aad4;outline-offset:3px}
+@media(max-width:620px){.personal-constellation{margin-top:25px;padding-top:17px}.personal-constellation>h3{font-size:14px;margin-bottom:19px}.constellation-points{grid-template-columns:1fr 1fr;gap:20px 0}.constellation-point:nth-child(n){margin-top:0;padding:0 6px}.constellation-point:nth-child(even){margin-top:12px}.constellation-point strong{font-size:15px;max-width:140px}.constellation-label{font-size:8px}.constellation-dot{margin-bottom:9px}.constellation-orbit{height:100%;opacity:.5}.constellation-orbit path{d:path('M250 5C750 5 780 25 750 40S100 50 250 72 750 80 750 98')}.constellation-orbit circle{display:none}.constellation-reading{font-size:11px;margin-top:17px;min-height:57px;padding-inline:10px}.constellation-sky{min-height:0}}
+@media(prefers-reduced-motion:reduce){.constellation-dot,.constellation-dot:after{transition:none}}

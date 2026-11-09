@@ -1,0 +1,49 @@
+.persona-deck{max-width:640px;margin:35px auto 10px;padding:22px 14px 12px;color:#25436f}
+.persona-deck>h3{font-size:16px;font-weight:500;line-height:1.5;letter-spacing:-.3px;margin:0 0 26px;text-align:center;color:#61799d}
+.persona-workspace{display:grid;grid-template-columns:145px minmax(0,1fr);gap:27px;align-items:center}
+.persona-picker{display:flex;flex-direction:column;gap:6px;align-items:stretch;position:relative;z-index:2}
+.persona-picker button{appearance:none;text-align:left;background:none;border:0;border-left:2px solid #b6c6e0;color:#7188a8;font:inherit;font-size:12px;font-weight:500;padding:10px 13px;cursor:pointer;line-height:1.5;transition:color .2s,border-color .2s,background .2s}
+.persona-picker button[aria-selected="true"]{border-color:#2854ff;color:#2854ff;background:#dbe4fa8a}
+.persona-picker button:hover{color:#2854ff}.persona-picker button:focus-visible{outline:2px solid #2854ff;outline-offset:3px}
+.persona-stack{position:relative;isolation:isolate;min-width:0;margin:8px 8px 8px 0}
+.persona-stack:before,.persona-stack:after{content:'';position:absolute;inset:0;z-index:-1;border:1px solid #b5c5e1;border-radius:6px 24px 6px 6px;pointer-events:none}
+.persona-stack:before{background:linear-gradient(125deg,#f8fbff,#b6c4d9 45%,#edf3fc 61%,#fff);transform:rotate(4deg) translate(6px,-3px)}
+.persona-stack:after{background:linear-gradient(125deg,#e9d79c,#f6eac5,#c2a967);transform:rotate(-4deg) translate(-6px,4px)}
+.persona-card{position:relative;min-height:246px;box-sizing:border-box;padding:27px 28px;background:#2851df;color:#f5f8ff;border-radius:6px 24px 6px 6px;overflow:hidden;isolation:isolate;box-shadow:0 14px 25px #32559a13}
+.persona-caption{margin:0 0 21px;font-size:9px;letter-spacing:1px;text-transform:uppercase;line-height:1.5;font-weight:500;color:#c1d2ff;position:relative;z-index:1;max-width:80%}
+.persona-name{font-size:35px;letter-spacing:-1.3px;font-weight:550;line-height:1.15;color:#f4df9f;margin:0 0 18px;text-wrap:balance;max-width:310px;position:relative;z-index:1}
+.persona-description{font-size:13px;font-weight:400;line-height:1.85;color:#ebf0ff;margin:0;position:relative;z-index:1;max-width:320px;text-wrap:pretty}
+.persona-card.is-number .persona-name{font-size:67px;line-height:.9;letter-spacing:-2px;margin-bottom:14px}
+.persona-card.is-number .persona-caption{margin-bottom:16px}
+.persona-card.is-number .persona-description{max-width:280px}
+.persona-orb{position:absolute;width:48px;height:48px;right:20px;top:19px;border-radius:50%;background:linear-gradient(125deg,#a8bbd9,#fff 28%,#bbc7da 47%,#f9faff 62%,#dac283);opacity:.9;rotate:-18deg;z-index:0}
+.persona-seal{position:absolute;width:146px;height:146px;right:-76px;bottom:-84px;border:1px solid #e5d39a99;border-radius:50%;z-index:0}
+.persona-seal:after{content:'';position:absolute;inset:12px;border:1px solid #b5c8ff77;border-radius:50%}
+.persona-card:focus-visible{outline:2px solid #a27d2e;outline-offset:5px}
+@media(max-width:620px){.persona-deck{margin-top:26px;padding:15px 16px 6px}.persona-deck>h3{font-size:14px;margin-bottom:25px}.persona-workspace{display:flex;flex-direction:column-reverse;gap:23px}.persona-stack{width:100%;margin:4px 0}.persona-card{min-height:251px;padding:24px}.persona-caption{font-size:8px;margin-bottom:23px}.persona-name{font-size:32px;max-width:240px;margin-bottom:17px}.persona-description{font-size:12px;line-height:1.85}.persona-picker{display:grid;grid-template-columns:1fr 1fr;gap:5px 10px;width:100%}.persona-picker button{font-size:11px;padding:8px 10px}.persona-orb{width:42px;height:42px;right:18px;top:16px}}
+@media(prefers-reduced-motion:reduce){.persona-picker button{transition:none}}
+.persona-deck{max-width:580px;margin-top:28px;padding:17px 14px 8px;background:transparent;box-shadow:none}
+.persona-deck>h3{color:#2e4975;font-weight:550;margin-bottom:23px}
+.persona-workspace{grid-template-columns:136px minmax(0,1fr);gap:22px;background:transparent;box-shadow:none}
+.persona-picker{background:transparent;box-shadow:none}
+.persona-picker button{color:#3e5b87;font-weight:550;border-left-color:#9fb4d7;padding:9px 11px}
+.persona-picker button[aria-selected="true"]{background:#d5e0fa;color:#1747df;border-color:#2854ff}
+.persona-stack{background:transparent;box-shadow:none}
+.persona-card{min-height:222px;padding:24px;box-shadow:none}
+.persona-name{font-size:31px;letter-spacing:-1px;margin-bottom:15px}
+.persona-caption{margin-bottom:17px;color:#dbe5ff}
+.persona-description{font-size:12px;line-height:1.8}
+.persona-orb{width:41px;height:41px;right:18px;top:17px}
+.persona-card.is-chart .persona-name{font-size:27px;line-height:1.23;letter-spacing:-.8px;max-width:270px}
+.persona-card.is-chart .persona-name>span{display:block}
+.persona-card.is-number{background:linear-gradient(125deg,#d5b65f,#f4e5b7 48%,#d9bd76);color:#2a385a}
+.persona-card.is-number .persona-caption{color:#6b551f}.persona-card.is-number .persona-name{color:#31416b}.persona-card.is-number .persona-description{color:#3d4965}
+.persona-card.is-chart{background:#dfdcfa;color:#352856}.persona-card.is-chart .persona-caption{color:#6c5894}.persona-card.is-chart .persona-name{color:#443080}.persona-card.is-chart .persona-description{color:#51476c}
+.persona-card.is-tuvi{background:#20646c;color:#e8f7f6}.persona-card.is-tuvi .persona-caption{color:#c5e2df}.persona-card.is-tuvi .persona-name{color:#f1dfa8}.persona-card.is-tuvi .persona-description{color:#e1f1ed}
+.persona-card.is-number .persona-seal{border-color:#8a733e66}.persona-card.is-number .persona-seal:after{border-color:#8a733e44}
+.persona-card.is-chart .persona-seal{border-color:#8e7ab966}.persona-card.is-chart .persona-seal:after{border-color:#8e7ab944}
+.persona-picker button:nth-child(2)[aria-selected="true"]{color:#725418;border-color:#a58134;background:#e8dcae99}
+.persona-picker button:nth-child(3)[aria-selected="true"]{color:#54358b;border-color:#7651ad;background:#dcd8f799}
+.persona-picker button:nth-child(4)[aria-selected="true"]{color:#185d66;border-color:#2d7b83;background:#cfe6e799}
+.persona-card.is-number .persona-name{font-size:58px}
+@media(max-width:620px){.persona-deck{max-width:340px;margin-top:24px;padding:12px 13px 4px}.persona-deck>h3{font-size:14px;line-height:1.5;margin-bottom:23px}.persona-workspace{gap:20px}.persona-card{padding:22px;min-height:231px}.persona-name{font-size:29px}.persona-card.is-chart .persona-name{font-size:25px;line-height:1.25}.persona-caption{margin-bottom:19px;max-width:78%}.persona-picker button{font-size:11px;padding:8px 10px}.persona-description{font-size:12px}.persona-orb{width:37px;height:37px;right:15px;top:14px}}

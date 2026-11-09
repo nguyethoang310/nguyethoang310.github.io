@@ -1,0 +1,28 @@
+.thought-loop{stroke-width:19;stroke-linejoin:round}
+.usp-personal-notes{max-width:1050px;margin:29px auto 0;padding-top:19px;border-top:1px solid #bfcee7}
+.usp-personal-notes .about-personality{grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;align-items:stretch}
+.usp-personal-notes .about-personality>.about-eyebrow{font-size:15px;font-weight:500;letter-spacing:-.3px;color:#526d99;margin:0 0 7px;line-height:1.5}
+.usp-personal-notes .about-trait{padding:12px 14px;min-height:0;border:0;border-radius:3px 17px 3px 3px;background:#f8faff99;box-shadow:none;position:relative;overflow:hidden}
+.usp-personal-notes .about-trait:nth-of-type(2){background:linear-gradient(120deg,#f7faffcc,#e2e8f5aa,#f2e7c988)}
+.usp-personal-notes .about-trait:nth-of-type(3){background:#d9e3f7a6;border-radius:3px}
+.usp-personal-notes .about-trait:nth-of-type(4){background:#eee0b270;border-radius:17px 3px 3px 3px}
+.usp-personal-notes .about-placement{font-size:7px;letter-spacing:.5px;margin-bottom:5px;line-height:1.4;color:#7890b2}
+.usp-personal-notes .about-trait h3,.usp-personal-notes .about-personality .about-libra h3{font-size:16px!important;line-height:1.3;letter-spacing:-.35px;font-weight:550}
+.usp-personal-notes .about-trait-copy,.usp-personal-notes .about-personality .about-libra .about-trait-copy,.usp-personal-notes .about-personality .about-chart .about-trait-copy{font-size:10px;line-height:1.65;margin:7px 0 0;color:#6880a4}
+.usp-personal-notes .about-personality .about-libra .about-trait-copy br{display:none}
+.usp-personal-notes .about-number-body{display:flex;flex-direction:row;gap:9px;align-items:center}
+.usp-personal-notes .about-number-body h3{font-size:30px!important;font-weight:500;line-height:1}
+.usp-personal-notes .about-number-body .about-trait-copy{margin:0;font-size:10px}
+.usp-personal-notes .about-number-body .about-trait-copy br{display:none}
+.usp-personal-notes .about-sign-pair{grid-template-columns:1fr 1fr;gap:8px}
+.usp-personal-notes .about-sign-pair>div+div{padding-left:9px;border-left:1px solid #b0c4e5}
+.usp-personal-notes .about-chart .about-placement{font-size:6px;letter-spacing:0;gap:3px}
+.usp-personal-notes .about-sign-icon{width:11px;height:11px}
+.usp-personal-notes .about-tuvi-label{font-size:8px;margin-bottom:5px}
+.usp-personal-notes .about-tuvi h3 br{display:none}
+.usp-personal-notes .about-tuvi h3{font-size:14px!important}
+.usp-personal-notes .about-tuvi-art{width:46px;height:46px;opacity:.09;top:5px;right:5px}
+.usp-personal-notes .about-personality .about-libra .about-balance{width:44px;height:38px;right:10px;top:8px;opacity:.13}
+.usp-personal-notes .about-number-orbit{display:none}
+@media(max-width:800px){.usp-personal-notes .about-personality{grid-template-columns:1fr 1fr}.usp-personal-notes .about-trait{padding:13px 15px}.usp-personal-notes .about-trait-copy{max-width:240px}}
+@media(max-width:620px){.usp-personal-notes{margin-top:24px;padding-top:17px}.usp-personal-notes .about-personality{gap:9px}.usp-personal-notes .about-personality>.about-eyebrow{font-size:14px;margin-bottom:5px}.usp-personal-notes .about-trait{padding:12px}.usp-personal-notes .about-trait h3{font-size:15px!important}.usp-personal-notes .about-tuvi h3{font-size:14px!important}.usp-personal-notes .about-sign-pair{grid-template-columns:1fr;gap:7px}.usp-personal-notes .about-sign-pair>div+div{padding:0;border:0}.usp-personal-notes .about-number-body{display:block}.usp-personal-notes .about-number-body h3{font-size:28px!important;margin:0 0 5px}.usp-personal-notes .about-number-body .about-trait-copy{font-size:10px}.usp-personal-notes .about-personality .about-chart .about-trait-copy{margin-top:7px}}

@@ -1,0 +1,27 @@
+/* Read the interpretation and its visual evidence together. */
+.tottri-stage:not(.is-brief){display:grid;grid-template-columns:minmax(230px,.8fr) minmax(0,2.5fr);gap:25px;align-items:start;padding-top:25px}
+.tottri-stage:not(.is-brief) .tottri-story{display:block;min-width:0;padding-top:2px}
+.tottri-stage:not(.is-brief) .tottri-story h4{font-size:23px;line-height:1.35;margin:9px 0 17px}
+.tottri-stage:not(.is-brief) #tottri-stage-intro{font-size:12px;line-height:1.85;margin:0}
+.tottri-stage:not(.is-brief) .tottri-finding-grid{display:block;border:0;border-radius:0;background:none;overflow:visible}
+.tottri-stage:not(.is-brief) .tottri-finding-grid article:nth-child(n){background:none;padding:12px 0;border:0;border-bottom:1px solid #cbd7ec}
+.tottri-stage:not(.is-brief) .tottri-finding-grid article:first-child{padding-top:0}
+.tottri-stage:not(.is-brief) .tottri-finding-grid h5{font-size:13px;margin-bottom:5px}
+.tottri-stage:not(.is-brief) .tottri-finding-grid p{font-size:12px;line-height:1.75}
+.tottri-stage:not(.is-brief) .tottri-insight{font-size:12px;line-height:1.8;margin-top:15px;color:#294b85}
+.tottri-stage:not(.is-brief) .tottri-evidence{margin:0;padding:0;border:0;border-radius:0;background:none;min-width:0}
+.tottri-stage:not(.is-brief) .tottri-slide-toolbar{margin:0 0 12px;padding:0}
+.tottri-slide-nav{gap:4px 16px}
+.tottri-slide-nav button{border:0;border-bottom:2px solid transparent;border-radius:0;background:none;color:#5a7095;font-size:11px;padding:5px 0 8px;min-height:36px}
+.tottri-slide-nav button[aria-pressed=true]{background:none;border-color:#2854ff;color:#244be0;font-weight:650}
+.tottri-slide-nav button:hover{color:#244be0}
+.tottri-stage .tottri-slide-preview{border:0;border-radius:3px;background:#fff;padding:0;box-shadow:0 7px 24px #263d7510}
+.tottri-stage.is-brief .tottri-story{padding:2px 0 8px}
+.tottri-stage.is-brief .tottri-story h4{margin-bottom:18px}
+.tottri-stage.is-brief .tottri-finding-grid{gap:25px;background:none;border:0}
+.tottri-stage.is-brief .tottri-finding-grid article:nth-child(n){background:none;border:0;border-radius:0;padding:0 0 18px;border-bottom:1px solid #bdcbed}
+.tottri-stage.is-brief .tottri-finding-grid h5{font-size:24px;color:#244bcf;line-height:1.4;max-width:450px;letter-spacing:-.6px}
+.tottri-stage.is-brief .tottri-insight{font-size:24px;line-height:1.5;font-weight:550;letter-spacing:-.5px;color:#244bcf;max-width:940px;margin:20px 0 0;padding:0;border:0;background:none;border-radius:0}
+@media(max-width:900px){.tottri-stage:not(.is-brief){grid-template-columns:minmax(215px,.85fr) minmax(0,2fr);gap:20px}.tottri-stage:not(.is-brief) .tottri-story h4{font-size:21px}.tottri-stage.is-brief .tottri-finding-grid h5,.tottri-stage.is-brief .tottri-insight{font-size:22px}}
+@media(max-width:700px){.tottri-stage:not(.is-brief){display:flex;flex-direction:column;gap:19px;padding-top:20px}.tottri-stage:not(.is-brief) .tottri-story,.tottri-stage:not(.is-brief) .tottri-evidence{width:100%}.tottri-stage:not(.is-brief) .tottri-story h4{font-size:23px;margin-bottom:13px}.tottri-stage:not(.is-brief) .tottri-finding-grid article:nth-child(n){padding:10px 0}.tottri-stage:not(.is-brief) .tottri-finding-grid article:first-child{padding-top:0}.tottri-stage.is-brief .tottri-finding-grid{grid-template-columns:1fr;gap:16px}.tottri-stage.is-brief .tottri-finding-grid article:nth-child(n){padding-bottom:16px}.tottri-stage.is-brief .tottri-finding-grid h5,.tottri-stage.is-brief .tottri-insight{font-size:21px}.tottri-slide-nav{gap:3px 15px}.tottri-stage.is-brief .tottri-insight{margin-top:17px}}
+.tottri-stage.is-brief .tottri-finding-grid article:nth-child(n) h5{color:#244bcf}

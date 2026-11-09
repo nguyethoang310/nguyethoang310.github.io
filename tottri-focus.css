@@ -1,0 +1,27 @@
+.tottri-overview{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,.85fr);gap:19px 30px;background:#2549d2;border:0;color:#fff;padding:28px 30px;border-radius:18px}
+.tottri-title-row{grid-column:1/-1;align-items:center}
+.tottri-kicker{color:#cad8ff;letter-spacing:1px;font-size:10px}
+.tottri-title-row h3{color:#fff;font-size:32px;line-height:1.25;margin-top:5px}
+.tottri-title-row img{width:145px;height:61px;padding:11px 15px;box-sizing:border-box;background:#fff;border-radius:12px;object-fit:contain}
+.tottri-lead-row{display:contents;margin:0}
+.tottri-lead-row .tottri-lead{grid-column:1;grid-row:2;color:#fff;font-size:26px;line-height:1.4;font-weight:550;letter-spacing:-.7px;max-width:630px;margin:0}
+.tottri-keypoints{grid-column:2;grid-row:2/4;display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:18px;align-self:stretch;border:0;padding:22px 24px;border-radius:12px;background:linear-gradient(115deg,#ddc587,#f8ebc2 46%,#d1b36e);max-width:none}
+.tottri-keypoints p:first-child{padding:0 0 17px;border:0;border-bottom:1px solid #a88b464d}
+.tottri-keypoints span{font-size:11px;color:#6d5d38;font-weight:500;margin-bottom:9px}
+.tottri-keypoints strong{font-size:clamp(25px,2.9vw,38px);color:#253e70;font-weight:600;letter-spacing:-1px;line-height:1.2}
+.tottri-keypoints p:last-child{font-size:15px;line-height:1.7;font-weight:550;color:#314b79;max-width:270px}
+.tottri-context-group{grid-column:1;grid-row:3;min-width:0}
+.tottri-context-group .tottri-context{color:#e0e8ff;font-size:12px;line-height:1.85;max-width:650px;margin:0}
+.tottri-context-group .tottri-context-2026{margin-top:12px;border-left:2px solid #e3ce90;padding-left:13px;color:#cbd9ff}
+.tottri-contribution{grid-column:1/-1;grid-row:4;grid-template-columns:1.6fr 1fr;gap:13px;margin:0;padding-top:18px;border-top:1px solid #a7bfff55}
+.tottri-contribution p{font-size:12px;line-height:1.7;background:#f9fbff;color:#2d4c80;border:0;border-radius:8px;padding:13px 16px}
+.tottri-contribution p:last-child{background:#ffffff0d;border:1px solid #b8caff66;color:#e6edff}
+.tottri-contribution span{font-size:10px;font-weight:550;letter-spacing:.2px;color:#55709b;margin-bottom:4px}
+.tottri-contribution p:last-child span{color:#e5d095}
+@media(max-width:900px){.tottri-overview{grid-template-columns:minmax(0,1.3fr) minmax(235px,.8fr);gap:18px 23px;padding:25px}.tottri-lead-row .tottri-lead{font-size:24px}.tottri-keypoints{padding:20px}.tottri-keypoints p:last-child{font-size:13px}.tottri-keypoints strong{font-size:29px}.tottri-contribution{grid-template-columns:1.4fr 1fr}}
+@media(max-width:620px){.tottri-overview{display:flex;flex-direction:column;gap:17px;padding:22px 19px;border-radius:15px}.tottri-title-row h3{font-size:28px}.tottri-title-row img{width:104px;height:50px;padding:10px 12px}.tottri-kicker{font-size:8px;letter-spacing:.7px}.tottri-lead-row .tottri-lead{font-size:22px;line-height:1.4}.tottri-keypoints{display:grid;grid-template-columns:1fr 1fr;gap:13px;align-items:center;padding:16px 17px;align-self:auto}.tottri-keypoints p:first-child{padding:0 12px 0 0;border-bottom:0;border-right:1px solid #a88b4655}.tottri-keypoints span{font-size:9px;margin-bottom:6px}.tottri-keypoints strong{font-size:19px;letter-spacing:-.6px;white-space:nowrap}.tottri-keypoints p:last-child{font-size:11px;line-height:1.7}.tottri-context-group .tottri-context{font-size:12px}.tottri-context-group .tottri-context-2026{margin-top:12px;padding-left:11px}.tottri-contribution{grid-template-columns:1fr;gap:9px;padding-top:16px}.tottri-contribution p{font-size:11px;padding:12px 14px}.tottri-contribution span{font-size:9px}}
+
+/* Annotation refinements: equal research findings and plain connecting text. */
+.tottri-stage.is-brief .tottri-insight{padding:0;border:0;border-radius:0;background:none;margin-top:16px;font-size:13px;line-height:1.8;color:#49648e}
+.tottri-stage[data-step="1"] .tottri-finding-grid article{background:#fff}
+.tottri-stage[data-step="1"] .tottri-finding-grid article:nth-child(n){background:#fff}

@@ -1,0 +1,22 @@
+.book-title-line{white-space:nowrap}
+.world-book strong .book-title-line{font:inherit;color:inherit;line-height:inherit}
+.world-book strong br{display:initial}
+.gallery-action{display:flex;justify-content:center;padding-top:4px}
+.world-photography{gap:10px}
+.contact-footer{background:#e8edf9;color:#192e52;padding:28px 0;border-top:1px solid #d4ddef}
+.contact-footer-inner{display:flex;justify-content:space-between;align-items:center;gap:26px;max-width:1120px}
+.footer-identity{display:flex;align-items:center;gap:17px}
+.footer-identity .moon-mark{width:39px;height:39px;flex:0 0 39px}
+.footer-name{font-size:21px;line-height:1.4;font-weight:650;letter-spacing:-.6px;margin:0 0 5px}
+.footer-email{font-size:14px;line-height:1.6;margin:0;color:#476082}
+.footer-connections{display:flex;align-items:center;gap:29px}
+.footer-location{display:flex;align-items:center;gap:8px;font-size:13px;line-height:1.5;margin:0;color:#486080}
+.footer-location svg{width:20px;height:20px;fill:none;stroke:#3154b1;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.footer-linkedin{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 15px;border:1px solid #bccce8;border-radius:30px;background:#f7f9ff;color:#2247b5;text-decoration:none;font-size:13px;font-weight:600;transition:background .2s,transform .2s}
+.footer-linkedin>svg{width:19px;height:19px;fill:currentColor}
+.footer-linkedin .footer-external{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.footer-linkedin:hover{background:#fff;transform:translateY(-2px)}
+.footer-linkedin:focus-visible{outline:2px solid #2854ff;outline-offset:4px}
+@media(max-width:800px){.footer-connections{gap:18px}.footer-name{font-size:19px}.footer-email{font-size:13px}}
+@media(max-width:600px){.contact-footer{padding:23px 0}.contact-footer-inner{flex-direction:column;align-items:flex-start;gap:20px;width:calc(100% - 40px)}.footer-identity{gap:12px}.footer-name{font-size:18px}.footer-email{font-size:12px}.footer-connections{width:100%;justify-content:space-between;gap:12px}.footer-location{font-size:12px}.footer-linkedin{font-size:12px;padding:9px 12px}.gallery-action{padding-top:5px}.world-reading{margin-top:0}.world-book strong{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.footer-linkedin{transition:none}.footer-linkedin:hover{transform:none}}

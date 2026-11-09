@@ -1,0 +1,26 @@
+/* One continuous composition: typography carries the content. */
+.working-cluster{display:grid;grid-template-columns:.92fr 1.08fr;gap:0;margin-top:32px;background:#f9fbff;border:1px solid #bfcee7;border-radius:3px;overflow:hidden;align-items:stretch;box-shadow:none}
+.about-usp-section .working-cluster .work-style{padding:29px 32px 24px;margin:0;background:transparent;border:0}
+.working-cluster .work-style-heading{display:block;margin:0 0 25px;padding:0}
+.working-cluster .work-style-heading h3{font-size:29px;line-height:1.3;letter-spacing:-1px;font-weight:550}
+.working-cluster .work-style-list{display:block;padding:0;gap:0;border:0}
+.working-cluster .work-style-list li,.working-cluster .work-style-list li:first-child,.working-cluster .work-style-list li:last-child{display:block;margin:0;padding:19px 0;border:0;border-top:1px solid #cad6e9;background:none;border-radius:0;box-shadow:none;transform:none;translate:none;isolation:auto}
+.working-cluster .work-style-list li:before,.working-cluster .work-style-list li:after{content:none}
+.working-cluster .work-style-list h4{font-size:22px;line-height:1.45;letter-spacing:-.55px;font-weight:400;color:#63799b;text-wrap:pretty}
+.working-cluster .work-style-list h4 strong{color:#2146ab;font-weight:600}
+.working-cluster .work-style-list p{font-size:11px;line-height:1.75;margin:8px 0 0;color:#7a8aa5}
+.working-cluster .work-style-list li:last-child{padding-bottom:0}
+.working-cluster .core-skills{margin:0;padding:29px 34px 22px;border:0;border-left:1px solid #3158d8;border-radius:0;background:#244bd8;box-shadow:none;isolation:auto}
+.working-cluster .core-skills:before,.working-cluster .core-skills:after{content:none}
+.working-cluster .core-skills>h3{font-size:29px;font-weight:550;line-height:1.3;letter-spacing:-1px;margin:0 0 22px;padding:0;color:#fff}
+.working-cluster .core-skills>h3 span{color:#fff}
+.working-cluster .core-skill-grid{display:grid;grid-template-columns:1fr;gap:0;border:0;padding:0}
+.working-cluster .core-skill,.working-cluster .core-skill:nth-child(even),.working-cluster .core-skills .core-skill:last-child{display:block;min-height:0;grid-template-columns:none;margin:0;padding:15px 0!important;border:0;border-top:1px solid #ffffff38;box-shadow:none;border-radius:0;background:none}
+.working-cluster .core-skill h4{font-size:21px;line-height:1.4;font-weight:550;letter-spacing:-.5px;margin:0 0 5px;color:#fff;max-width:none;text-wrap:pretty}
+.working-cluster .core-skill p{font-size:11px;line-height:1.7;color:#c9d7ff;margin:0;max-width:none}
+.working-cluster .core-skill:last-child{padding-bottom:0!important}
+.working-cluster+.usp-personal-notes{margin-top:23px}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.working-cluster .work-style-list li:hover{box-shadow:none;translate:none}.working-cluster .work-style-list li:hover h4{translate:none}.working-cluster .core-skill:hover h4{color:#fff}.working-cluster .core-skill h4{transition:translate .3s cubic-bezier(.16,1,.3,1)}.working-cluster .core-skill:hover h4{translate:3px 0}}
+@media(max-width:900px){.about-usp-section .working-cluster .work-style{padding:25px}.working-cluster .core-skills{padding:25px}.working-cluster .work-style-heading h3,.working-cluster .core-skills>h3{font-size:26px}.working-cluster .work-style-list h4{font-size:20px}.working-cluster .core-skill h4{font-size:19px}}
+@media(max-width:700px){.working-cluster{grid-template-columns:1fr;margin-top:24px;border-radius:3px}.about-usp-section .working-cluster .work-style{padding:24px 23px}.working-cluster .work-style-heading{margin-bottom:19px}.working-cluster .work-style-heading h3{font-size:27px}.working-cluster .work-style-list li,.working-cluster .work-style-list li:first-child,.working-cluster .work-style-list li:last-child{padding:16px 0}.working-cluster .work-style-list li:last-child{padding-bottom:0}.working-cluster .work-style-list h4{font-size:20px;line-height:1.45}.working-cluster .work-style-list p{font-size:11px;margin-top:6px}.working-cluster .core-skills{padding:24px 23px 22px;border-left:0;border-top:1px solid #3158d8}.working-cluster .core-skills>h3{font-size:27px;margin-bottom:19px}.working-cluster .core-skill,.working-cluster .core-skill:nth-child(even),.working-cluster .core-skills .core-skill:last-child{padding:15px 0!important;min-height:0}.working-cluster .core-skill h4{font-size:19px;line-height:1.4;margin-bottom:5px}.working-cluster .core-skill p{font-size:11px;line-height:1.7}}
+.working-cluster .work-style-list li:nth-child(n){background:none;border-radius:0;margin:0;transform:none;box-shadow:none;translate:none}
