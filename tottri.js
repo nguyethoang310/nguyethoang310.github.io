@@ -17,10 +17,10 @@ nav.className='tt-slide-pager';nav.setAttribute('aria-label','Lật slide minh c
 nav.replaceChildren(slideTitle,previous,counter,next);
 function selectImage(i,animate=true){
  imageIndex=i;const item=stages[active].images[i];if(!item)return;
- image.src='assets/projects/tottri/slide-'+item.n+'.webp';image.alt=item.alt;
+ projectImages.swap(root.querySelector('.tottri-slide-preview'),[{element:image,src:'assets/projects/tottri/slide-'+item.n+'.webp',alt:item.alt}]);
  slideTitle.textContent=item.label;counter.textContent=String(i+1).padStart(2,'0')+' / '+String(stages[active].images.length).padStart(2,'0');
  previous.disabled=i===0;next.disabled=i===stages[active].images.length-1;
- if(animate)motionReveal(root.querySelector('.tottri-slide-preview'),'fade',{duration:260});
+
 }
 previous.addEventListener('click',()=>{if(imageIndex>0)selectImage(imageIndex-1)});
 next.addEventListener('click',()=>{if(imageIndex<stages[active].images.length-1)selectImage(imageIndex+1)});
@@ -32,8 +32,9 @@ function select(i,focus=false,animate=true){
  if(data.images.length){selectImage(0,false)}if(focus)tabs[i].focus();if(animate)motionReveal(panel,'fade',{duration:320});
 }
 tabs.forEach((t,i)=>{t.addEventListener('click',()=>select(i));t.addEventListener('keydown',e=>{let n;if(e.key==='ArrowRight')n=(active+1)%tabs.length;if(e.key==='ArrowLeft')n=(active+tabs.length-1)%tabs.length;if(e.key==='Home')n=0;if(e.key==='End')n=tabs.length-1;if(n===undefined)return;e.preventDefault();select(n,true)})});
-root.querySelector('.tottri-slide-preview').addEventListener('click',()=>{const item=stages[active].images[imageIndex],full=root.querySelector('#tottri-full-image');full.src=image.src;full.alt=image.alt;root.querySelector('#tottri-lightbox-title').textContent=item.label;dialog.showModal();document.body.style.overflow='hidden'});
+root.querySelector('.tottri-slide-preview').addEventListener('click',()=>{if(root.querySelector('.tottri-slide-preview').getAttribute('aria-busy')==='true')return;const item=stages[active].images[imageIndex],full=root.querySelector('#tottri-full-image');full.src=image.src;full.alt=image.alt;root.querySelector('#tottri-lightbox-title').textContent=item.label;dialog.showModal();document.body.style.overflow='hidden'});
 dialog.querySelector('button').addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>document.body.style.overflow='');dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
+projectImages.register(root,stages.flatMap(stage=>stage.images.map(item=>'assets/projects/tottri/slide-'+item.n+'.webp')));
 select(0,false,false);const visibility=new IntersectionObserver(entries=>entries.forEach(entry=>entry.target.classList.toggle('tt-in-view',entry.isIntersecting)),{threshold:.12});visibility.observe(root.querySelector('.tottri-evidence'));
 onEntrance(root.querySelector('.tottri-overview'),()=>{motionReveal(root.querySelector('.tottri-title-row'),'side');motionReveal(root.querySelector('.tottri-lead'),'rise',{delay:80});motionReveal(root.querySelector('.tottri-contribution'),'fade',{delay:150})});
 onEntrance(root.querySelector('.tottri-journey'),()=>motionReveal(root.querySelector('.tottri-journey'),'fade'));
